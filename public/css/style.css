@@ -31,7 +31,7 @@ body.dark{
 }
 
 .mr-auto, .mx-auto{
-    margin-right:0!important;
+    margin-right:2rem!important;
 }
 
 .navbar{
@@ -114,7 +114,7 @@ text-shadow: 1px 1px 2px #000000;
     border-radius: 4px 4px;
     padding: 10px;
     width: 100%;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     transition: background 0.2s linear!important;
 }
 
@@ -549,7 +549,8 @@ text-shadow: 1px 1px 2px #000000;
 }
 
 .home_thumbnails {
-    width: 100%;
+    width: 216px;
+    height: 243px;
 }
 
 /* CHARCATER DETAILS PAGE */
@@ -704,4 +705,55 @@ text-shadow: 1px 1px 2px #000000;
 .home:hover{
     background-color: #b0b1b3;
     transition: background 0.2s linear;
+}
+
+/* LOGIN PAGE */
+
+#bodyLogin{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-size: cover;
+    background-color: #f39c12;
+    background-repeat: no-repeat;
+    color: white!important;
+    background-image: url(../images/bg-login-light.jpg)!important;
+    background-attachment: fixed;
+    transition: background 0.2s linear;
+    padding-top: 1rem;
+}
+
+#bodyLogin.dark{
+    background-image: url(../images/bg_list_dark.webp)!important;
+    background-size: cover;
+    width: 100vw;
+    background-color: #003755;
+ 
+}
+.container_login {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin-left: 50%;
+    /* flex-wrap: wrap; */
+    text-align: justify;
+    padding-top: 2rem;
+    /* vertical-align: middle; */
+    text-shadow: 1px 1px 2px #000000;
+    height: 80%;
+}
+
+.formulaire-inscription{
+    background-color: rgb(255,255,255,0.5);
+    padding: 1rem;
+    border-radius: 10px;
+    color: #000;
+}
+
+.login_button{
+    width: 100%;
 }

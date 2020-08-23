@@ -32,7 +32,7 @@
                   <span class="navbar-toggler-icon"></span>
               </button>
               <!-- end of button's menu for the mobile version -->
-               <a class="navbar-brand logo" href="index.html"><img src="../images/logo_white.png" class="logo"></a>
+               <a class="navbar-brand logo" href="index.html" id="logo"></a>
             
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
@@ -116,39 +116,12 @@
                               </form>
                          </div>
                     </li>
-
-                    <li class="nav-item dropdown">
-                        <div class="collapse" id="collapseExample">
-                            <div class="form_content">
-                              <form class="form-inline form_search">
-                                  <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                                  <button class="btn form-btn" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                                </form>
-                            </div>
-                          </div>
-                          <a class="search" id="search_btn" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-                              <i class="fa fa-search" aria-hidden="true"></i>
-                            </a>
-                            <!-- Small modal -->
-                            <!-- <button type="button" class="btn" data-toggle="modal" data-target=".bd-example-modal-sm">                        
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                            </button> -->
-          
-                            <!-- <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-sm" role="document">
-                                <div class="modal-content">
-                                    <form class="form-inline my-2 my-lg-0 form_search">
-                                        <input class="form-control mr-sm-2" id="searchBar" type="search" placeholder="Search" aria-label="Rechercher">
-                                          <a href="#" class="btn my-2 my-sm-0 icon-top" id="searchButton" aria-label="Search"><i class="fa fa-search" aria-hidden="true"></i></a>
-                                      </form>
-                                </div>
-                            </div>
-                            </div> 
-                           
-                        </div>-->
-                    </li>
                   </ul>
-                  
+                  <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Accio recherche" aria-label="Search">
+                    <button class="btn my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </form>
                   
                
               </div>
@@ -166,17 +139,16 @@
                 </ol>
               </nav>              
             <div class="container_list_content">
-                <div class="borderTitle">
-                    <h2 class="h2_title">Les maison de Pouddlard</h2>
-                 </div>
-                 
-            
+                <h2 class="h2_title">Les Maisons de Poudlard</h2>
+                            
                 <!-- Début carte maison -->
 
-                <a href="#" class="card text-white bg-info mb-3 serdaigle" id="serdaigle">
-                    <h3 class="card-header">Serdaigle</h3>
-                    <img src="../images/serdaigle.png" class="home_thumbnails"alt="Serdaigle">
-                </a>
+               <!-- Début carte personnage -->
+               <a href="#" class="card text-white bg-info mb-3 serdaigle" id="serdaigle">
+                <h3 class="card-header">Serdaigle</h3>
+                <img src="../images/serdaigle.png" class="home_thumbnails"alt="Serdaigle">
+            </a>
+            
     <!-- Début carte personnage -->
                 <a href="#" class="card text-white bg-warning mb-3 poufsouffle" id="poufsouffle">
                     <h3 class="card-header">Poufsouffle</h3>

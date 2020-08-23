@@ -21,7 +21,6 @@ let app = {
         bodyList.classList.toggle('dark');
         //logo.classList.remove('logo');
         logo.classList.toggle('dark');
-
     }
     };
     
