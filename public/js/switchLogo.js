@@ -1,8 +1,3 @@
-// const chk = document.getElementById('chk');
-
-// chk.addEventListener('change', () => {
-//     document.body.classList.toggle('darkList');
-// });
 
 let app = {
     init: function () {
@@ -17,8 +12,8 @@ let app = {
     },
     darkOrLight: function () {
         const logo = document.getElementById('logo');
-        const bodyList = document.getElementById('bodyList');
-        bodyList.classList.toggle('dark');
+        const body = document.getElementById('body');
+        body.classList.toggle('dark');
         //logo.classList.remove('logo');
         logo.classList.toggle('dark');
 
@@ -26,5 +21,4 @@ let app = {
     };
     
     document.addEventListener('DOMContentLoaded', app.init );
-
 

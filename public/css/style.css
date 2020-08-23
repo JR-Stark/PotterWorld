@@ -9,8 +9,10 @@ body{
     background-color: #f39c12;
     background-repeat: no-repeat;
     color: white!important;
+    background-image: url(../images/bg_home_sunlight.webp);
     background-attachment: fixed;
     transition: background 0.2s linear;
+    padding-top: 1rem;
 }
 
 body.dark{
@@ -39,6 +41,7 @@ body.dark{
 
 .navbar-collapse {
     justify-content: flex-end;
+    padding-right: 2rem;
 }
 
 .nav-link{
@@ -71,8 +74,21 @@ text-shadow: 1px 1px 2px #000000;
 }
 
 .logo{
-    width: 20%;
+    width: 116px;
+    height: 110px;
+    background-image: url(../images/logo_dark.png);
+    background-size: cover;
+    transition: background 0.2s linear;
+
 }
+.logo:hover, .logo.dark{
+    width: 116px;
+    height: 110px;
+    background-image: url(../images/logo_white.png)!important;
+    background-size: cover;
+
+}
+
 .form_search{
     display: flex;
     flex-wrap: nowrap;
@@ -198,10 +214,12 @@ text-shadow: 1px 1px 2px #000000;
 
 .bottom {
     height: 8vh;
-    /*width: 100%;*/
+    width: 100%;
     display: flex;
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: center;
+    /* bottom: 0; */
+    text-align: center;
 }
 
 .nav-footer{
@@ -223,6 +241,7 @@ text-shadow: 1px 1px 2px #000000;
     flex-wrap: nowrap;
     align-items: flex-end;
     justify-content: center;
+    text-align: center;
 }
 
 .logo_small{
@@ -282,18 +301,45 @@ text-shadow: 1px 1px 2px #000000;
 	color: #f39c12;
 }
 
+.breadcrumb li a{
+    color: #f39c12;
+}
+
+.breadcrumb-content{
+    width: 100%;
+}
+
+.breadcrumb {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: .75rem 0;
+    margin-bottom: 1rem;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 0;
+}
+
 /* BOUTON SEARCH */
 
 
 
 /* CHARCATER LIST PAGE */
+ #bodyList{
+    background-image: url(../images/bg_list_light.webp);
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ }
 
-body.darkList{
+#bodyList.dark{
     background-image: url(../images/bg_list_dark.webp)!important;
     background-color: #003755;
     background-repeat: no-repeat;
     color: white!important;
     background-attachment: fixed;
+    width: 100%;
 }
 
 /*.logo{
@@ -304,39 +350,137 @@ body.darkList{
     max-width: 150px;
 }*/
 .container_list{
-   
-    /*width: 100%;*/
-    margin: 0!important;
+    margin: 2rem auto 2rem auto!important;
     padding: 2rem;
-    max-width: 100vw;
+    /*max-width: 1280px;*/
     background-color: white;
     color: black;
-}
-.h2_title{
-    padding: 2rem 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-.container_content{
+.list-group{
+    width: 20%;
+}
+
+.badge-fond-orange {
+    color: white;
+    background-color: black;
+    margin-left: 0.25rem;
+}
+
+.h2_title{
+    padding-bottom: 10px;
+    width: 100%;
+    margin: 0 0 2rem 0;
+    border: 5px solid #FF8A0D;
+    text-align: center;
+    border-radius: 10px;
+    padding: .5rem;
+}
+
+.borderTitle{
+    margin-bottom: 2rem;
+}
+
+.uk-subnav{
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; */
+    padding-left: 0;
+    padding-right: 1rem;
+    margin-left: 0;
+    width: 100%;
+}
+.uk-subnav>* {
+    padding-left: 0;
+}
+
+.card-list{
+    text-align: center!important;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
 }
 
-.card{
-    justify-content: center;
-    align-items: center;
-    max-width: 13rem;
-    max-height: 20rem;
+.card-list-global {
+    width: 20%;
+    padding: 0 2rem 0 0;
+}
+
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #f39c12;
+    border-color: #f39c12;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    /* max-width: 13rem; */
+    /* max-height: 20rem; */
     text-align: center;
     transition-property: background, color;
     transition-duration: 1s;
     transition-timing-function: ease-in-out;
+    /* width: 100%; */
+}
+.uk-subnav-pill>.uk-active>a{
+    background-color: #f39c12;
+    
+}
+
+.gryffondor{
+    /* background-color: #dc3545!important; */
+    color:#ffc107!important;
+    font-weight: 700;
+}
+.cardGryffondor{
+    color: #ffc107;
+    font-weight: 700;
+}
+.serpentard{
+    /* background-color: #28a745!important; */
+    color: black!important;
+    font-weight: 700;
+    
+
+}
+
+.poufsouffle{
+    /* background-color: #ffc107!important; */
+    color: black!important;
+    font-weight: 700;
+   
+
+}
+
+.serdaigle{
+    /* background-color: #17a2b8!important; */
+    color: white!important;
+    font-weight: 700;
+}
+
+.autres{
+    /* background-color: #ccc; */
+    color: black!important;
+    font-weight: 700;
+   
 }
 
 .card:hover{
-    background-color: darkcyan;
+    background-color: black;
     text-decoration: none;
     color: #000!important;
 }
@@ -370,4 +514,194 @@ body.darkList{
 
 .maison_thumbnails{
     width: 25%;
+}
+
+.uk-subnav-pill>.uk-active>a {
+    background-color: #FF8A0D;
+    color: #fff;
+    border-radius: 4px 4px;
+    font-weight: 900;
+}
+
+/* PAGES MAISONS POUDLARD */
+
+.container_list_home{
+   
+    margin: 0 auto!important;
+    padding: 2rem;
+    max-width: 1280px;
+    background-color: white;
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.container_list_content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.home_thumbnails {
+    width: 100%;
+}
+
+/* CHARCATER DETAILS PAGE */
+
+.container_character{
+    margin: 2rem auto 2rem auto!important;
+
+    /*max-width: 1280px;*/
+    background-color: white;
+    color: black;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+.characters-left{
+    width: 50%;
+    padding: 2rem;
+}
+.characters-right{
+    width: 50%;
+}
+.harry-potter{
+    background-image: url(../images/harry-potter.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.citation{
+    font-weight: 700;
+    font-style: italic;
+}
+
+.descrition-list{
+    display: flex;
+    align-items: baseline;
+}
+
+.description-characters-list{
+
+}
+
+.description-characters-underline {
+    text-decoration: underline #FF8A0D!important;
+    width: 25%;
+}
+
+.uk-table td {
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.uk-table td h3 {
+    padding: 0 0 1rem 0;
+    vertical-align: baseline;
+}
+
+.uk-table th {
+    padding: 0;
+}
+
+.uk-table a{
+    color: #FF8A0D;
+}
+
+.list-category{
+    display: flex;
+}
+
+.btn-category{
+    border-radius: 10px;
+    width: 48px;
+    /* height: 64px; */
+    padding: 0.8rem;
+    text-align: center;
+    margin-right: .2rem;
+}
+.ico-category {
+    width: 32px;
+    /*height: 48px;*/
+}
+
+.gentils {
+    background-color: #17A2B8;
+    transition: background 0.2s linear;
+}
+
+.gentils:hover{
+    background-color: #116875;
+}
+
+.quidditch{
+    background-color: #DC3545;
+    transition: background 0.2s linear;
+}
+.quidditch:hover{
+    background-color: #9b2632;
+}
+
+.patronus{
+    background-color: rgb(27, 193, 248);
+    transition: background 0.2s linear;
+}
+
+.patronus:hover{
+    background-color: rgb(131, 215, 243);
+}
+.phoenix{
+    background-color: #ffe608;
+    transition: background 0.2s linear;
+}
+
+.phoenix:hover{
+    background-color: #e0ad03;
+}
+
+.slug{
+    background-color: rgb(156, 92, 7);
+    transition: background 0.2s linear;
+}
+
+.slug:hover{
+    background-color: rgb(85, 50, 4);
+}
+
+.aurors{
+    background-color: #563D7C;
+    transition: background 0.2s linear;
+}
+
+.aurors:hover{
+    background-color: #35074b;
+}
+
+.dumb-army{
+    background-color: #6C757D;
+    transition: background 0.2s linear;
+}
+
+.dumb-army:hover{
+    background-color: #abb9c5;
+}
+
+.home{
+    background-color: #F8F9FA;
+    transition: background 0.2s linear;
+}
+
+.home:hover{
+    background-color: #b0b1b3;
+    transition: background 0.2s linear;
 }

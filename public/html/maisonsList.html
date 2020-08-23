@@ -22,7 +22,8 @@
         <title>Potter World</title>
     </head>
 
-    <body onload="set_style_from_cookie()" id="body">
+    <body class="bg_list" style="background-image: url(../images/bg_list_light.webp);"  onload="set_style_from_cookie()">
+
 
         <header class="top">
             <nav class="navbar navbar-expand-lg navbar-dark ">
@@ -31,7 +32,7 @@
                   <span class="navbar-toggler-icon"></span>
               </button>
               <!-- end of button's menu for the mobile version -->
-               <a class="navbar-brand logo" href="index.html" id="logo"></a>
+               <a class="navbar-brand logo" href="index.html"><img src="../images/logo_white.png" class="logo"></a>
             
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mr-auto">
@@ -157,16 +158,42 @@
         <!-- End of Header -->
 
         <!-- Start of main content -->
-        <main class="container">
-            <article class="home_content">
-                <h1 class="titreH1">Vous êtes fan d'Harry Potter?</h1>
-                <p class="home_text">
-                    Ça tombe bien nous aussi ! Alors prenez plaisir à découvrir le monde d’Harry Potter, grâce à de nombreuses informations sur notre jeune héros préféré! Et si vous vous sentez l’âme d’un champion, intégrer l’une des quatres maisons de Poudlard, et remportez la coupe avec vos camarades en répondant à notre quiz ! Mais avant cela, il faut passer par l’étape du Choixpeau Magique, alors enfourchez votre balais et direction l’inscription !</p>
-                <a class="btn login_button">                        
-                    <img src="../images/hiboux.svg" class="hiboux_ico" alt="icone hiboux blanc">
-                    <!-- <h4 class="btn_text"></h4> -->S'inscrire
+        <main class="container_list_home">  
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Accueil</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Les Maisons de Poudlard</li>
+                </ol>
+              </nav>              
+            <div class="container_list_content">
+                <div class="borderTitle">
+                    <h2 class="h2_title">Les maison de Pouddlard</h2>
+                 </div>
+                 
+            
+                <!-- Début carte maison -->
+
+                <a href="#" class="card text-white bg-info mb-3 serdaigle" id="serdaigle">
+                    <h3 class="card-header">Serdaigle</h3>
+                    <img src="../images/serdaigle.png" class="home_thumbnails"alt="Serdaigle">
                 </a>
-            </article>
+    <!-- Début carte personnage -->
+                <a href="#" class="card text-white bg-warning mb-3 poufsouffle" id="poufsouffle">
+                    <h3 class="card-header">Poufsouffle</h3>
+                    <img src="../images/poufsoufle.png" class="home_thumbnails"alt="Poufsouffle">
+                </a>
+                <!-- Début carte personnage -->
+                <a href="gryffondor.html" class="card text-white bg-danger mb-3 gryffondor" id="gryffondor">
+                    <h3 class="card-header">Gryffondor</h3>
+                    <img src="../images/gryffondor.png" class="home_thumbnails"alt="Gryffondor">
+                </a>
+                        <!-- Début carte personnage -->
+                <a href="#" class="card text-white bg-success mb-3 serpentard" id="serpentard">
+                    <h3 class="card-header">Serpentard</h3>
+                    <img src="../images/serpentard.png" class="home_thumbnails"alt="Serpentard">
+                </a>
+                
+            </div>
         </main>
         <!-- End of main content -->
 
@@ -213,10 +240,10 @@
       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
       <script src="../js/themeScript.js"></script>
-      <script src="../js/switchTheme.js"></script>
-      <script src="../js/switchLogo.js"></script>
+      <script src="../js/switchBgList.js"></script>
       <!-- UIkit JS -->
       <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.6/dist/js/uikit.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.6/dist/js/uikit-icons.min.js"></script>
+
     </body>
 </html>
