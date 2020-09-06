@@ -11,7 +11,7 @@ const app = express();
 // réglages views
 app.set('views', 'app/views');
 app.set('view engine', 'ejs');
-
+//app.set('views', __dirname + '/pages'); 
 
 // les statiques
 app.use(express.static('public'));

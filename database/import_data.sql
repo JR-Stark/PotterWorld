@@ -2,8 +2,8 @@
 -- table school
 -- -----------------------------
 
-INSERT INTO "school"("name", "director_name", "localisation", "descritpion_courte", "description_longue", "embleme", "image") VALUES
-('Poudlard', 'Godric Gryffondor, Rowena Serdaigle, Helga Poufsouffle, Salazar Serpentard (Xème siècle), Edessa Sakndenberg(XVème siècle), Elizabeth Burke et Vindictus Viridian (XVII ème siècle), Phineas Black (1847 à 1925), Armando Dippet(1925 à 1956), Albus Dumbledore (1956 à 1996), Dolores Ombrage(quelques mois en 1996), Albus Dumbledore (1996 au 30 juin 1997), Severus Rogue (1er septembre 1997 au 1er mai 1998), Minerva McGonagall (depuis 1998).', 'Pré-au-Lard en Ecosse', 'Le collège Poudlard, école de sorcellerie, est un établissement formant les jeunes sorcières et sorciers britanniques à l art et à la pratique de la magie. Il est situé en Écosse.
+INSERT INTO "school"("id", "name", "director_name", "localisation", "descritpion_courte", "description_longue", "embleme", "image") VALUES
+(1, 'Poudlard', 'Godric Gryffondor, Rowena Serdaigle, Helga Poufsouffle, Salazar Serpentard (Xème siècle), Edessa Sakndenberg(XVème siècle), Elizabeth Burke et Vindictus Viridian (XVII ème siècle), Phineas Black (1847 à 1925), Armando Dippet(1925 à 1956), Albus Dumbledore (1956 à 1996), Dolores Ombrage(quelques mois en 1996), Albus Dumbledore (1996 au 30 juin 1997), Severus Rogue (1er septembre 1997 au 1er mai 1998), Minerva McGonagall (depuis 1998).', 'Pré-au-Lard en Ecosse', 'Le collège Poudlard, école de sorcellerie, est un établissement formant les jeunes sorcières et sorciers britanniques à l art et à la pratique de la magie. Il est situé en Écosse.
 <br><br>
 Poudlard est un large château de sept étages supportés par la magie, avec de nombreuses tours ainsi que de très profonds donjons. Le château a été construit par Godric Gryffondor, Helga Poufsouffle, Rowena Serdaigle et Salazar Serpentard.', 'Poudlard se situe dans le Nord du Royaume-Uni, en Écosse. endroit est décrit comme montagneux et est situé à proximité d un lac. école se situe également non loin de Pré-au-Lard, un village exclusivement habité par des sorciers.
 
@@ -32,12 +32,7 @@ Mais les premières divergences apparaissent. En effet, les différences de poin
 Malgré tout, les tensions s intensifient. Salazar Serpentard refuse catégoriquement l admission d enfants nés-Moldus, personnes qui, selon lui, ne sont pas dignes d étudier la magie. À l inverse, les trois autres fondateurs s opposent et insistent pour que tous puissent se former. Serpentard quitte finalement le château, non sans raison. Aujourd hui encore, les tensions entre les maisons, en particulier entre les élèves de Gryffondor et ceux de Serpentard, sont toujours aussi vives.<br><br>
 
 Poudlard sera le thêatre de moulte péripéthie, et notamment la bataille de Poudlard en mai 1998, qui verra la fin du règne de terreur de Lord Voldemort, mais aussi la dispariton de nombreuses personnes chère au coeur d Harry Potter et de ses amis, comme Albus Dumbledore, Fred Weasley, Nymphadora Thonks, Remus Lupin, ...', 'poudlard.png', 'chateau-poudlard.jpg'),
--- -----------------------------
--- table school
--- -----------------------------
-
-INSERT INTO "school"("name", "director_name", "localisation", "descritpion_courte", "description_longue", "embleme", "image")VALUES
-('Académie Beauxbâtons', 'Godefroy Beauxbatons(1313 à 1320), Ambelion Ballessaim(1323 à ?), Maxime Olympe(1994 à aujourd hui)', 'En France, dans les pyrénées, entre Andorre et le Perthus' , 'Académie de Beauxbâtons est un établissement formant les jeunes sorcières et sorciers Français à l art et à la pratique de la magie. Elle est située au cœur des Pyrénées, dans le Sud de la France.', 'Académie de Beauxbâtons est située dans l’Est des Pyrénées, entre Andorre et Le Perthus. Elle se trouve au cœur de la chaîne montagneuse, au sommet d une montagne décapitée communément appelée Mont Creux, dissimulée sous une, sinon la plus grande illusion du monde. Le seul moyen d y accéder est un Tunnel de Transportation à l accès très réglementé, dont la seule entrée est située dans la Gare Centrale de Transportation, au Bourg Enchanteur.
+(2, 'Académie Beauxbâtons', 'Godefroy Beauxbatons(1313 à 1320), Ambelion Ballessaim(1323 à ?), Maxime Olympe(1994 à aujourd hui)', 'En France, dans les pyrénées, entre Andorre et le Perthus' , 'Académie de Beauxbâtons est un établissement formant les jeunes sorcières et sorciers Français à l art et à la pratique de la magie. Elle est située au cœur des Pyrénées, dans le Sud de la France.', 'Académie de Beauxbâtons est située dans l’Est des Pyrénées, entre Andorre et Le Perthus. Elle se trouve au cœur de la chaîne montagneuse, au sommet d une montagne décapitée communément appelée Mont Creux, dissimulée sous une, sinon la plus grande illusion du monde. Le seul moyen d y accéder est un Tunnel de Transportation à l accès très réglementé, dont la seule entrée est située dans la Gare Centrale de Transportation, au Bourg Enchanteur.
 <br><br>
  Académie a été originellement fondée en 1313, sur mes terres de St Renaud, au sein même de mon château. C était une période de crise économique importante, et la persécution de l Inquisition incitait la noblesse sorcière à faire profil bas. Le roi connaissait notre existence, et nous protégeait des rafles meurtrières du clergé, mais nous n étions pas en mesure de réclamer de l argent à la Couronne.
 <br><br>
@@ -55,7 +50,7 @@ l Académie a ensuite connu une longue période de calme, jusqu en 1789. Les nom
 <br><br>
 Cette fermeture dura jusqu à 1804, date à laquelle furent fondés les Ordres, et construit les Pavillons. Jusque-là, l internat se situait dans les étages aujourd hui appelés Pavillon de Chasse. c est aussi à cette époque qu ont été créés les tunnels de Transportation. À l époque, il n y en avait qu un, reliant un bâtiment secret situé dans Paris à l Académie. En 1808 furent crées les diplômes de C.H.A.S.S.E, directement liés à la création de l Université de Chevalier-Lys, même si celle-ci a connu son véritable essor dans les années 1980, notamment avec l arrivé à la direction de Beauxbâtons d Olympe Maxime en 1982, menant à une refonte globale de l éducation sorcière Française, et au regroupement des flux d élèves par le Bourg Enchanteur.
 ', 'beauxbatons.png', 'neant'),
-('Durmstrang', 'Igor Karkaroff', 'Région de Krasnïarsk en Russie', 'l Institut Durmstrang est l une des deux écoles russes de Magie. Parmi les onze principales écoles de magie existantes, c est celle qui a la plus mauvaise réputation, connue pour ses liens avec la magie noire.', 'Château de quatre étages qui s est étendu jusqu à constituer une petite ville cramponnée à flanc de montagne, l Institut de Durmstrang est aussi appelé la Citadelle par ses résidents.
+(3, 'Durmstrang', 'Igor Karkaroff', 'Région de Krasnïarsk en Russie', 'l Institut Durmstrang est l une des deux écoles russes de Magie. Parmi les onze principales écoles de magie existantes, c est celle qui a la plus mauvaise réputation, connue pour ses liens avec la magie noire.', 'Château de quatre étages qui s est étendu jusqu à constituer une petite ville cramponnée à flanc de montagne, l Institut de Durmstrang est aussi appelé la Citadelle par ses résidents.
 <br><br>
 Le château en lui-même est une école: mais on y trouve aussi, dans le reste de la Citadelle, des centres de recherches réservés à des professionnels, comme des Maîtres des Potions ou des experts en Magie Noire.
 <br><br>
@@ -78,7 +73,7 @@ Harfang Munter, qui prit la direction de l école après la mort suspecte de Né
 Igor Karkaroff, directeur au moment du Tournoi des Trois Sorciers, ancien Mangemort qui a maintenu un climat de peur et de tensions dans l école durant la période de sa direction. De nombreux parents retirèrent d ailleurs leurs enfants de l institut, ayant peur de ses méthodes d enseignement.<br><br>
 Gellert Grindelwald, un des mages noirs les plus célèbres et les plus meurtriers avec Voldemort du XXème siècle. Cet ancien élève est sûrement le sorcier qui a le plus nui à la réputation de l école. d après Viktor Krum, il avait dessiné sa marque sur le mur d un couloir de l école, marque qui était en réalité le symbole des Reliques de la Mort qu il avait essayé de retrouver avec Dumbledore dans leur jeunesse.<br><br>
 Après le mandat d Igor Karkaroff, la réputation de Durmstrang s est améliorée, notamment grâce à de fameux sorciers comme Viktor Krum.', 'durmstrang.png', 'neant'),
-('Aucune', 'Aucun', 'Aucun', 'Néant', 'Néant', 'aucune', 'aucun');
+(4, 'Aucune', 'Aucun', 'Aucun', 'Néant', 'Néant', 'aucune', 'aucun');
 
 -- ------------------------
 -- table family
@@ -170,7 +165,7 @@ INSERT INTO "organisation"("id", "name", "description_courte", "image") VALUES
 -- table character_has_organisation
 -- ------------------------------
 
-INSERT INTO "character_has_organisation"("character_id", "orgasnisation_id") VALUES
+INSERT INTO "character_has_organisation"("character_id", "organisation_id") VALUES
 ('1', '1'),
 ('1', '2'),
 ('1', '4'),
