@@ -1,17 +1,10 @@
-const { Character } = require('../models/');
+const { Characters } = require('../models/');
 
 const charactersListController = {
 
   characters: async (req, res) => {
     try {
-      const characters = await Character.findAll({
-        association: "blood",
-        include: ['name'],
-        order : [
-          ['position', 'ASC'],
-          ['character', 'id', 'ASC']
-      ]
-      });
+      const characters = await Characters.findAll();
       
       res.render('characters', { characters });
     } catch (err) {
@@ -19,8 +12,6 @@ const charactersListController = {
       res.status(500).send(err);
     }
   }
-
 };
-
 
 module.exports = charactersListController;

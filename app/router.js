@@ -2,11 +2,13 @@ const express = require('express');
 
 // importer les controllers
 const mainController = require('./controllers/mainController');
-const charactersListController = require('./controllers/charactersListController.js');
-const characterController = require('./controllers/characterController.js');
+const charactersListController = require('./controllers/charactersListController');
+const characterController = require('./controllers/characterController');
 // const houseController = require('./controllers/houseController.js');
 // const familyController = require('./controllers/familyController.js');
-// const schoolsController = require('./controllers/schoolsController.js');
+//const schoolsController = require('./controllers/schoolsController.js');
+//const schoolController = require('./controllers/schoolController.js');
+
 // const organisationController = require('./controllers/organisationController.js');
 // const spellsController = require('./controllers/spellsController.js');
 // const quizController = require('./controllers/quizController');
@@ -35,13 +37,13 @@ router.get('/house', houseController);
 
 // Page détails d'une maison
 router.get('/house/:id', houseController);
-
+*/
 //Page des écoles de magie dans le monde
-router.get('wizardSchools', schoolsController);
+//router.get('schools', schoolsController);
 
 //Page de détails d'une école de magie
-router.get('/wizardSchool/id:', schoolsController);
-
+//router.get('/school/id:', schoolController);
+/*
 // Page contenant la liste de tous les sortilèges
 router.get('/spells', spellsController);
 

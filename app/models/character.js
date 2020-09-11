@@ -1,6 +1,5 @@
 const Sequelize = require('sequelize');
 const sequelize = require('../database');
-const { SELECT } = require('sequelize/types/lib/query-types');
 
 class Character extends Sequelize.Model {};
 
@@ -35,5 +34,16 @@ Character.init({
   tableName: "character"
 });
 
-// on exporte la class directement !
-module.exports = Character;
+class Characters extends Sequelize.Model {};
+
+Characters.init({
+  firstname: Sequelize.STRING,
+  lastname: Sequelize.STRING,
+  maison: Sequelize.STRING,
+  url: Sequelize.STRING
+},{
+  sequelize,
+  tableName: "character"
+});
+
+module.exports = Characters;
