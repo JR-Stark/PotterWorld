@@ -23,11 +23,11 @@ Character.init({
   animal: Sequelize.STRING,
   home: Sequelize.STRING,
   cause_deces: Sequelize.STRING,
-  Other_family: Sequelize.STRING,
+  /*Other_family: Sequelize.STRING,
   father_id: Sequelize.INTEGER,
   mother_id: Sequelize.INTEGER,
   blood_id: Sequelize.INTEGER,
-  shcool_id: Sequelize.INTEGER,
+  shcool_id: Sequelize.INTEGER,*/
   url: Sequelize.STRING
 },{
   sequelize,
