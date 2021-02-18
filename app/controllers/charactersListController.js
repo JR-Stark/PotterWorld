@@ -1,10 +1,10 @@
-const { Characters } = require('../models/');
+const { Character } = require('../models/Character');
 
 const charactersListController = {
 
   characters: async (req, res) => {
     try {
-      const characters = await Characters.findAll();
+      const characters = await Character.findAll();
       
       res.render('characters', { characters });
     } catch (err) {

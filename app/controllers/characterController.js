@@ -1,10 +1,10 @@
-const { Character } = require('../models');
+const { Character } = require('../models/Character');
 
 const characterController = {
     character: async (req, res) => {
         try {
           const character = await Character.findOne(
-            `async: true`
+            //`async: true`
           );
           res.render('character', { character });
         } catch (err) {
@@ -16,6 +16,29 @@ const characterController = {
   };
   
   module.exports = characterController;
+
+
+
+
+
+// const { Character } = require('../models');
+
+// const characterController = {
+//     character: async (req, res) => {
+//         try {
+//           const character = await Character.findOne(
+//             `async: true`
+//           );
+//           res.render('character', { character });
+//         } catch (err) {
+//           console.trace(err);
+//           res.status(500).send(err);
+//         }
+//       }
+  
+//   };
+  
+  //module.exports = characterController;
 
 //   const mainController = {
 //     homePage: (request, response) => {

@@ -1,26 +1,27 @@
 // Premier reflexe : les variables d'environnement !
 const dotenv = require('dotenv');
 dotenv.config();
-const PORT = process.env.PORT || 5050;
-
+const PORT = process.env.PORT || 8080;
+// le routage
+const router = require('./app/router');
 // et c'est parti pour Express !
 const express = require('express');
-
+const session = require('express-session');
 const app = express();
 
 // réglages views
 app.set('views', 'app/views');
 app.set('view engine', 'ejs');
 //app.set('views', __dirname + '/pages'); 
-
+app.set("models", "./app/models");
 // les statiques
+//app.use(express.static(__dirname + "/app/public"));
 app.use(express.static('public'));
-
 // on rajoute la gestion des POST body
 app.use(express.urlencoded({extended: true}));
 
 // et on rajoute la gestion des sessions
-const session = require('express-session');
+
 app.use(session({
   saveUninitialized: true,
   resave: true,
@@ -28,11 +29,10 @@ app.use(session({
 }));
 
 // et hop, notre middleware magique
-const userMiddleware = require('./app/middlewares/user');
-app.use(userMiddleware);
+// const userMiddleware = require('./app/middlewares/user');
+// app.use(userMiddleware);
 
-// le routage
-const router = require('./app/router');
+
 app.use(router);
 
 // lancement du serveur
