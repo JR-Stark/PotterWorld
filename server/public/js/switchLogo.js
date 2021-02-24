@@ -49,7 +49,7 @@ let app = {
 
         console.log(hours);
         
-        if (hours > 20 || hours < 6 ){
+        if (hours > 19 || hours < 6 ){
             background.classList.add('night');
             background.style.transition = "5s linear";
             fbackground.classList.add('night');
