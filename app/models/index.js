@@ -4,7 +4,7 @@
 // const Quiz = require('./quiz');
 // const Tag = require('./tag');
 // const User = require('./user');
-const Character = require('./character');
+//const Character = require('./character');
 //const School = require('./school');
 
 // Un personnage ne peut avoir qu'une école
@@ -92,4 +92,4 @@ const Character = require('./character');
 // });
 
 // module.exports = { Answer, Level, Question, Quiz, Tag, User };
-module.exports = { Character/*, School*/ };
+//module.exports = { Character/*, School*/ };

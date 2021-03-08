@@ -13,11 +13,7 @@ const app = express();
 app.set('views', 'app/views');
 app.set('view engine', 'ejs');
 //app.set('views', __dirname + '/pages'); 
-<<<<<<< HEAD:index.js
-
-=======
 //app.set("models", "./app/models");
->>>>>>> schoolController:server/index.js
 // les statiques
 //app.use(express.static(__dirname + "/app/public"));
 app.use(express.static('public'));
