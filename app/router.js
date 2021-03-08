@@ -37,7 +37,7 @@ router.get('/house', houseController);
 router.get('/house/:id', houseController);
 */
 //Page des écoles de magie dans le monde
-router.get('schools', schoolController.schools);
+router.get('/schools', schoolController.schools);
 router.get('/school/:id', schoolController.school);
 //Page de détails d'une école de magie
 //router.get('/school/id:', schoolController);
