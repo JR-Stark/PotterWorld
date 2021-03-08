@@ -138,6 +138,12 @@ CREATE TABLE IF NOT EXISTS "character" (
     "url" TEXT NOT NULL,
     "other_feature" TEXT NOT NULL, 
     "job" TEXT NOT NULL,
+    "lieu_naissance" TEXT,
+    "why_this_name" TEXT,
+    "cause_deces" TEXT,
+    "other_family" TEXT,
+    "father_name" TEXT,
+    "mother_name" TEXT,
     "created_at" TIMESTAMP NOT NULL DEFAULT NOW(),
     "updated_at" TIMESTAMP
 );
