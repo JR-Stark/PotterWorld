@@ -24,7 +24,7 @@ SET row_security = off;
 -- Data for Name: family; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO family ("id", "name", "created_at", "updated_at") VALUES
+INSERT INTO "family" ("id", "name", "created_at", "updated_at") VALUES
 (1, 'Londubat', '2020-08-27 00:05:14.225918', NULL),
 (2, 'Potter', '2020-08-27 00:05:14.225918', NULL),
 (3, 'Evans', '2020-08-27 00:05:14.225918', NULL),
