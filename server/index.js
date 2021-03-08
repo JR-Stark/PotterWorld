@@ -1,7 +1,7 @@
 // Premier reflexe : les variables d'environnement !
 const dotenv = require('dotenv');
 dotenv.config();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 5050;
 // le routage
 const router = require('./app/router');
 // et c'est parti pour Express !
